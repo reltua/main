@@ -1,0 +1,76 @@
+#
+# Region
+#
+- type: region
+  item: volynska
+  name: Мережа Вебсайтів Нерухомості - Україна
+  address: 76018, м. Івано-Франківськ, вул.&nbsp;Січових&nbsp;Стрільців,&nbsp;56
+  phone_main: 380974949649
+  phone_hot: 380974949649
+  phone_fax: 380974949649
+  email: info@realestate.lt.ua
+  www: https://www.realestate.lt.ua/
+
+#
+# District
+#
+# - type: district
+#   item: lutskyy
+#   name: Нерухомість у ... районі
+
+#
+# District / Town
+#
+# - type: town
+#   item: berestechko
+#   name: Нерухомість у місті ...
+
+#
+# Region / City
+#
+# - type: city
+#   item: lutsk
+#   name: Нерухомість у місті ...
+
+#
+# Developers / Company
+#
+- type: developer
+  item: builder
+  name: Будівельна компанія "Будівельник"
+
+#
+# Realtor / Agent
+#
+- type: realtor
+  item: bandera
+  name: Продавець нерухомосіт - Степан Бандера
+  # address: 76018, м. Івано-Франківськ, вул.&nbsp;Січових&nbsp;Стрільців,&nbsp;56
+  # phone_main: 380672349221
+  # phone_hot: 380672349221
+  # phone_fax: 380672349221
+  # email: info@realestate.uz.ua
+  # www: https://www.realestate.uz.ua/
+
+- type: realtor
+  item: agent
+  name: Нерухомість від Агента Продавця
+  # address: 76018, м. Івано-Франківськ, вул.&nbsp;Січових&nbsp;Стрільців,&nbsp;56
+  # phone_main: 380504949649
+  # phone_hot: 380504949649
+  # phone_fax: 380504949649
+  # email: agent@realestate.uz.ua
+  # www: https://www.realestate.uz.ua/
+
+#
+# Agency / ahentsiya
+#
+- type: agency
+  item: ahentsiya
+  name: Нерухомість від Агенції Продавця
+  # address: 76018, м. Івано-Франківськ, вул.&nbsp;Січових&nbsp;Стрільців,&nbsp;56
+  # phone_main: 380504949649
+  # phone_hot: 380504949649
+  # phone_fax: 380504949649
+  # email: agency@realestate.uz.ua
+  # www: https://www.realestate.uz.ua/

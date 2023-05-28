@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+Disallow: /*/data/*
+Disallow: /*/data/
+Disallow: /*/data/*.json
+Disallow: /assets/css/*.css
+Disallow: /assets/js/*.js
+Disallow: *.json
+Disallow: /404.html
+Disallow: /add.html
+Disallow: /new.html
+Sitemap: https://www.realestate.lt.ua/sitemap.xml

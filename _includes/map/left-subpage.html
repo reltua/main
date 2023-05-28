@@ -1,0 +1,33 @@
+{%- assign seconds = site.html_pages | sort: 'path' -%}
+<ul class="list-unstyled">
+{%- for second in seconds -%}
+  {%- assign title = second.title | replace: "'", "&prime;" -%}
+  {%- assign navtitle = second.navtitle | replace: "'", "&prime;" -%}
+  {%- assign slug = second.url | split: '/' | last -%}
+  {%- assign current = second.url | remove: slug | remove: '//' | append: '/' -%}
+  {%- assign mapPage = second.url | append: 'map.html' -%}
+  {%- capture isMap -%}{%- file_exists {{ mapPage | remove_first: '/' }} -%}{%- endcapture -%}
+  {%- if isMap == 'true' -%}
+    {%- if include.current == current and second.navhide != 1 and page.url != mapPage -%}
+      <li>
+        {%- if page.url == second.url -%}
+          <span>{%- if navtitle -%}{{ navtitle }}{%- else -%}{{ title }}{%- endif -%}</span>
+        {%- else -%}
+          <a href="{{ second.url }}map">{%- if navtitle -%}{{ navtitle }}{%- else -%}{{ title }}{%- endif -%}</a>
+        {%- endif -%}
+      </li>
+    {%- endif -%}
+  {%- else -%}
+    {%- if include.current == current and second.navhide != 1 -%}
+      <li>
+        {%- if page.url == second.url -%}
+          <span>{%- if navtitle -%}{{ navtitle }}{%- else -%}{{ title }}{%- endif -%}</span>
+        {%- else -%}
+          <span>{%- if navtitle -%}{{ navtitle }}{%- else -%}{{ title }}{%- endif -%}</span>
+        {%- endif -%}
+      </li>
+    {%- endif -%}
+  {%- endif -%}
+{%- endfor -%}
+</ul>
+<p><a href="{{ include.current }}">>></a></p>
