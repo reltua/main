@@ -10,22 +10,24 @@ deck_region: Волинська
 volynska: Волинська
 
 #city
-# Володимир
-# Ковель
+volodymyr: Володимир
+kovel: Ковель
 lutsk: Луцьк
-# Нововолинськ
+novovolynsk: Нововолинськ
 
 #town
 berestechko: Берестечко
-# Берестечко
-# Горохів
-# Камінь-Каширський
-# Ківерці
-# Любомль
-# Рожище
-# Устилуг
+horokhiv: Горохів
+kamin-Kashyrskyi: Камінь-Каширський
+kivertsi: Ківерці
+liuboml: Любомль
+rozhyshche: Рожище
+ustyluh: Устилуг
 
 #district
+volodymyr-volynskyy: Володимир-Волинський район
+kamin-kashyrskyy: Камінь-Каширський район
+Kovelskyy: Ковельський район
 lutskyy: Луцький район
 
 home: Головна
