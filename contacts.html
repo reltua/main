@@ -1,11 +1,11 @@
 ---
-last_modified_at: 2023-05-28T18:06:45+02:00
+last_modified_at: 2023-11-19T22:58:11+02:00
 title: Контакти
 ---
 
 <h1>Ми там, де нас просто знайти.</h1>
-<p>Наші контакти для мешканців міста {{ site.data.lang-uk.flag_ua_city }} та Волиської області.</p>
-<p>Не соромтесь телефонувати і писати нам та <a href="{{ site.addre }}" rel="noopener">надсилати</a> ваші оголошення про продаж чи оренду нерухомості.</p>
+<p>Наші контакти для мешканців міста {{ site.data.lang-uk.flag_ua_city }} та {{ site.data.lang-uk.deck_region_in }}.</p>
+<p>Не соромтесь телефонувати і писати нам та <a href="/new.html" rel="noopener">надсилати</a> ваші оголошення про продаж чи оренду нерухомості.</p>
 
 <div class="row">
   <div class="col-12">
@@ -77,15 +77,12 @@ title: Контакти
             </address>
           </div>
           <div class="col">
-            <address>
+            <p>
               <strong>Телефони</strong>:<br>
               {%- include footer/phone.html legal=site.contact.phone_sms type='text' -%}<br>
-              {%- include footer/phone.html legal=site.contact.phone_hot type='text' -%}
-            </address>
-            <address>
-              <strong>Електронна пошта:</strong>:<br>
-              {% include footer/contact.html legal="email" %}
-            </address>
+              {%- include footer/phone.html legal=site.contact.phone_hot type='text' -%}<br>
+            </p>
+            <p><strong>Електронна пошта:</strong>:<br>{% include footer/contact.html legal="email" %}</p>
           </div>
         </div>
       </div>
@@ -100,8 +97,8 @@ title: Контакти
         {%- include social-media.html type="card" instagram=1 twitter=1 facebook=1 -%}
       </div>
       <div class="tab-pane fade" id="founders" role="tabpanel" aria-labelledby="founders-tab">
-        <h2>Засновники інформаційного ресурсу "{{ site.title }}"</h2>
-        <div class="row">
+        <h2>Засновники інформаційного ресурсу "Мережа Вебсайтів Нерухомості"</h2>
+        <div class="row mt-3">
           <div class="col-md-8 offset-md-2">
             <div class="row mx-n2 row-cols-1 row-cols-lg-2 row-cols-md-2 row-cols-sm-2">
               {%- for tf in site.data.team -%}
@@ -122,7 +119,7 @@ title: Контакти
       </div>
       <div class="tab-pane fade" id="team" role="tabpanel" aria-labelledby="team-tab">
         <h2>Наша команда</h2>
-        <div class="row">
+        <div class="row mt-3">
           <div class="col-md-8 offset-md-2">
             <div class="row mx-n2 row-cols-1 row-cols-lg-2 row-cols-md-2 row-cols-sm-2">
               {%- for tf in site.data.staff -%}
@@ -144,7 +141,7 @@ title: Контакти
       </div>
       <div class="tab-pane fade" id="about" role="tabpanel" aria-labelledby="about-tab">
         <h2>Про нас</h2>
-        <p>"<b>{{ site.title }}</b>" - {{ site.data.lang-uk.flag_ua_city }} це регіональний Інтернет вебсайт створений для задоволення потреб мешканців України, які володіють чи розпоряджаються нерухомістю в межах Волиської області.</p>
+        <p>"<b>Мережа Вебсайтів Нерухомості</b>" - {{ site.data.lang-uk.flag_ua_city }} це регіональний Інтернет вебсайт створений для задоволення потреб мешканців України, які володіють чи розпоряджаються нерухомістю в межах {{ site.data.lang-uk.deck_region_in }}.</p>
         <p>...</p>
       </div>
     </div>

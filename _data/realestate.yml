@@ -1,9 +1,15 @@
-- title: Нерухомість в Харківській області
-  navtitle: місто Харків
-  subtitle: Нерухомість в Харкові
-  small: Харківська область
-  url: https://www.realestate.kh.ua
-  slug: kharkivska
+- title: Нерухомість в Донецькій області
+  navtitle: місто Донецьк
+  subtitle: Нерухомість в Донецьку
+  small: Донецька область
+  url: http://www.realestate.dn.ua
+
+- title: Нерухомість в Запорізькій області
+  navtitle: місто Запоріжжя
+  subtitle: Нерухомість в Запоріжжі
+  small: Запорізька область
+  url: https://www.realestate.zp.ua
+  slug: zaporizhzhska
 
 - title: Нерухомість в Житомирській області
   navtitle: місто Житомир
@@ -17,12 +23,12 @@
   small: Полтавська область
   url: http://www.realestate.pl.ua
 
-- title: Нерухомість в Запорізькій області
-  navtitle: місто Запоріжжя
-  subtitle: Нерухомість в Запоріжжі
-  small: Запорізька область
-  url: https://www.realestate.zp.ua
-  slug: zaporizhzhska
+- title: Нерухомість в Закарпатській області
+  navtitle: місто Ужгород
+  subtitle: Нерухомість в Ужгороді
+  small: Закарпатська область
+  url: https://www.realestate.uz.ua
+  slug: zakarpatska
 
 - title: Нерухомість в Вінницькій області
   navtitle: місто Вінниця
@@ -36,12 +42,12 @@
   small: Рівненська область
   url: http://www.realestate.rv.ua
 
-- title: Нерухомість в Закарпатській області
-  navtitle: місто Ужгород
-  subtitle: Нерухомість в Ужгороді
-  small: Закарпатська область
-  url: https://www.realestate.uz.ua
-  slug: zakarpatska
+- title: Нерухомість в Чернівецькій області
+  navtitle: місто Чернівці
+  subtitle: Нерухомість в Чернівцях
+  small: Чернівецька область
+  url: https://www.realestate.cv.ua
+  slug: chernivetska
 
 - title: Нерухомість в Тернопільській області
   navtitle: місто Тернопіль
@@ -49,6 +55,13 @@
   small: Тернопільська область
   url: https://www.realestate.te.ua
   slug: ternopilska
+
+- title: Нерухомість в Харківській області
+  navtitle: місто Харків
+  subtitle: Нерухомість в Харкові
+  small: Харківська область
+  url: https://www.realestate.kh.ua
+  slug: kharkivska
 
 - title: Нерухомість в Кіровоградській області
   navtitle: місто Кропивницький
@@ -87,12 +100,12 @@
   small: Черкаська область
   url: http://www.realestate.ck.ua
 
-- title: Нерухомість в Чернівецькій області
-  navtitle: місто Чернівці
-  subtitle: Нерухомість в Чернівцях
-  small: Чернівецька область
-  url: https://www.realestate.cv.ua
-  slug: chernivetska
+- title: Нерухомість в Волинській області
+  navtitle: місто Луцьк
+  subtitle: Нерухомість в Луцьку
+  small: Волинська область
+  url: https://www.realestate.lt.ua
+  slug: volynska
 
 - title: Нерухомість в Миколаївській області
   navtitle: місто Миколаїв
