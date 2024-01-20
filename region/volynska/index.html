@@ -1,9 +1,6 @@
 ---
-last_modified_at: 2023-11-20T21:06:45+02:00
+last_modified_at: 2024-01-20T23:36:48+02:00
 title: Нерухомість у Волинській області
-navtitle:
-navhide:
-subtitle:
 breadcrumb: Волинська
 description: Купівля, продаж і оренда квартир, будинків, землі та комерційних нежитлових приміщень, новобудов у Волинській області
 table: 2
@@ -22,14 +19,14 @@ table: 2
           <li class="nav-item">
             <h5 class="m-lg-0">
               {%- if page.url contains mapPage -%}
-                <span class="badge badge-primary border-0" title="{{ site.data.lang-uk.re_map_on }}">
-                  <span>{{ site.data.lang-uk.re_map }}</span>
-                  <span class="d-lg-none">{{ site.data.lang-uk.nerukhomisti }}</span>
+                <span class="badge badge-primary border-0" title="{{ site.data.uk.re_map_on }}">
+                  <span>{{ site.data.uk.re_map }}</span>
+                  <span class="d-lg-none">{{ site.data.uk.nerukhomisti }}</span>
                 </span>
               {%- else -%}
-                <a class="badge badge-primary border-0" href="/{{ mapPage }}" title="{{ site.data.lang-uk.re_map_on }}">
-                  <span>{{ site.data.lang-uk.re_map }}</span>
-                  <span class="d-lg-none">{{ site.data.lang-uk.nerukhomisti }}</span>
+                <a class="badge badge-primary border-0" href="/{{ mapPage }}" title="{{ site.data.uk.re_map_on }}">
+                  <span>{{ site.data.uk.re_map }}</span>
+                  <span class="d-lg-none">{{ site.data.uk.nerukhomisti }}</span>
                 </a>
               {%- endif -%}
             </h5>
@@ -77,8 +74,8 @@ table: 2
           data-url="data/all.json">
           <thead class="thead-re">
             <tr>
-              <th data-field="type" data-title="{{ site.data.lang-uk.re_offer }}" data-formatter="propertyFormatter">Property</th>
-              <th data-field="price" data-title="{{ site.data.lang-uk.re_cost | capitalize }}" data-formatter="priceFormatter" data-sortable="true" data-sorter="priceSorter">Price</th>
+              <th data-field="type" data-title="{{ site.data.uk.re_offer }}" data-formatter="propertyFormatter">Property</th>
+              <th data-field="price" data-title="{{ site.data.uk.re_cost | capitalize }}" data-formatter="priceFormatter" data-sortable="true" data-sorter="priceSorter">Price</th>
             </tr>
           </thead>
         </table>

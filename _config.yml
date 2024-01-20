@@ -12,9 +12,9 @@ region: Волинська область
 region_slug: volynska
 region_size: .89rem
 
-usd: 37.70
-eur: 40.82
-nbu: 36.13994
+usd: 38.17
+eur: 41.62
+nbu: 37.7094
 
 title: Мережа Вебсайтів Нерухомості
 keywords: будинки, квартири, земля, житло, нежитлові приміщення, кімнати, оренда, частини квартири, частини будинку, гаражі, місця паркування, ділянки
@@ -73,17 +73,8 @@ defaults:
       path: ""
       type: "posts"
     values:
-      layout: "post"
-  - scope:
-      path: /articles/
-      type: "articles"
-    values:
-      layout: "articles"
-  - scope:
-      path: /news/
-      type: "news"
-    values:
-      layout: "news"
+      layout: "property"
+      permalink: /:categories/:title:output_ext
   - scope:
       path: "assets/images"
     values:
@@ -99,7 +90,22 @@ plugins:
   - jekyll-paginate-v2
   - jekyll-get-json
 
+pagination:
+  enabled: true
+  per_page: 9
+  permalink: '/:num/'
+  title: ' - page :num'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
+
 jekyll_get_json:
+  - data: estates
+    json: 'https://www.realestate.lt.ua/region/data/estates.json'
+    cache: true
+  - data: lt
+    json: 'https://www.realestate.lt.ua/region/data/options.json'
+    cache: true
   - data: kyiv
     json: 'https://www.realestate.kyiv.ua/region/data/options.json'
     cache: true
