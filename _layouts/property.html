@@ -61,7 +61,7 @@ layout: default
 
           {%- if page.surface_land -%}
             <dt>Загальна площа земельної ділянки</dt>
-            <dd>{{ surface }} метрів квадратних (<abbr title="Один метр квадратний">1 м²</abbr>) ({{ surface | divided_by: 10000.0000 | round: 4 }} га)</dd>
+            <dd>{{ page.surface_land }} метрів квадратних (<abbr title="Один метр квадратний">1 м²</abbr>) ({{ page.surface_land | divided_by: 10000.0000 | round: 4 }} га)</dd>
           {%- endif -%}
 
           {%- if page.floor -%}
