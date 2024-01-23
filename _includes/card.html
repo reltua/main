@@ -22,7 +22,7 @@
   {%- endif -%}
 {%- endcapture -%}
 
-<article class="card h-100{% if total > 1 %} border-bottom-0{% endif %}" role="presentation">
+<article class="card h-100{% if include.others > 0 %} border-bottom-0{% endif %}" role="presentation">
   <div class="card-body pb-0">
     <h3 class="sr-only m-0 p-0 h6"><data value="{{ offer.id }}">{% if offer.rent == '1' %}{{ site.data.uk.re_object_rent }}{% else %}{{ site.data.uk.re_object_sell }}{% endif %} - {{ offerType }}, {{ site.data.uk.re_cost }} {{ offer.price }}</data></h3>
     <div class="mb-1">{% include card/body.html %}</div>

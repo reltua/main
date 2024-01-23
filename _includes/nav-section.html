@@ -6,7 +6,7 @@
   {%- assign sized = slashd | size | minus: 1 -%}
 {%- endif -%}
 {%- assign here = slashd | slice: 0, sized | join: '/' | append: '/' -%}
-{%- assign ones = site.pages | sort: 'dir' | reverse | where_exp: 'i', "i.dir != here and i.url contains here and i.navhide != 1" -%}
+{%- assign ones = site.pages | sort: 'dir' | reverse | where_exp: 'i', 'i.dir != here and i.url contains here and i.navhide != 1' -%}
 {%- if include.style == "card" -%}
   {% assign number = 0 %}
   {%- for ci in ones -%}
@@ -27,8 +27,7 @@
       </div>
       <div class="card-footer bg-transparent border-top-0 text-right px-2">
         <span class="badge text-white p-0 m-1">
-          <span class="bg-info py-1 px-2 rounded-left">{{ offers | size }}</span>
-          <span class="py-1 px-2 bg-primary rounded-right">пропозицій</span>
+          <span class="bg-info py-1 px-2 rounded-left">{{ offers.size }}</span><span class="py-1 px-2 bg-primary rounded-right">пропозицій</span>
         </span>
       </div>
     </div>
