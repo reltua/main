@@ -1,15 +1,15 @@
 #
 # Region
 #
-- type: region
-  item: volynska
-  name: Мережа Вебсайтів Нерухомості - Україна
-  address: 76018, м. Івано-Франківськ, вул.&nbsp;Січових&nbsp;Стрільців,&nbsp;56
-  phone_main: 380974949649
-  phone_hot: 380974949649
-  phone_fax: 380974949649
-  email: info@realestate.lt.ua
-  www: https://www.realestate.lt.ua/
+# - type: region
+#   item: volynska
+#   name: Мережа Вебсайтів Нерухомості - Україна
+#   address: 76018, м. Івано-Франківськ, вул.&nbsp;Січових&nbsp;Стрільців,&nbsp;56
+#   phone_main: 380974949649
+#   phone_hot: 380974949649
+#   phone_fax: 380974949649
+#   email: info@realestate.lt.ua
+#   www: https://www.realestate.lt.ua/
 
 #
 # District

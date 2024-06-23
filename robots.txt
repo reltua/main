@@ -5,9 +5,11 @@ Disallow: /*/data/
 Disallow: /*/data/*.json
 Disallow: /assets/css/*.css
 Disallow: /assets/js/*.js
+Disallow: /assets/images/logo/
+Disallow: /assets/images/staff/
 Disallow: *.json
 Disallow: *.yml
-Disallow: CNAME
+Disallow: *.md
 Disallow: /404.html
 Disallow: /add.html
 Disallow: /new.html
