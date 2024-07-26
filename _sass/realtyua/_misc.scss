@@ -155,7 +155,41 @@ main .leaflet-menu {
 .properties dd { padding-left: 10px; }
 .properties dd .btn:focus, .btn.focus { box-shadow: none; }
 
-.page-item .page-pre { padding-top: 0.45rem }
-.page-item .page-next { padding-top: 0.45rem }
+.page-item .page-pre { padding-top: 0.45rem; }
+.page-item .page-next { padding-top: 0.45rem; }
 
-// .leaflet-menu-contents h2 { margin-top: 8px; }
+// https://jsfiddle.net/egeo/zgf4un7d/1/
+// https://jsfiddle.net/gQZ3F/12/
+// @include media-breakpoint-only(md) {
+//   .textarea ul, .textarea ol {
+//     position: relative;
+//     list-style-position: inside;
+//     left: 20px;
+//   }
+// }
+@include media-breakpoint-up(md) {
+  .textarea ul, .textarea ol {
+    position: relative;
+    list-style-position: inside;
+    left: 15px;
+  }
+}
+
+// https://stackoverflow.com/questions/14142378/how-can-i-fill-a-div-with-an-image-while-keeping-it-proportional
+// https://medium.com/@primozcigler/neat-trick-for-css-object-fit-fallback-on-edge-and-other-browsers-afbc53bbb2c3
+// <img src="/assets/images/380993316973/1699486229/3_kitchen.jpg" loading="lazy" width="380" height="285" title="Квартира у бульвар Південний, 24Б в м. Івано-Франківськ" alt="Квартира в м. Івано-Франківськ" style="object-fit: cover;/*! width: 50px; */height: 120px;" class="card-img-top">
+
+.card .fill {
+  display: flex;
+  text-align: center !important;
+  align-items: center !important;
+  justify-content: center !important;
+  object-fit: cover;
+  width: auto;
+  height: 8em;
+  overflow: hidden;
+  object-position: 50% 50%;
+}
+
+.col-md-3 .float-left { z-index: 1; }
+.textarea ul, ol { z-index: -1; }
